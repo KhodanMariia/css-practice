@@ -1,0 +1,81 @@
+<header class='header row g-0'>
+    <div class='col-3'>
+    {{> logo}}
+    </div>
+    <nav class='header_nav col-9'>
+    <div class='header_nav_right'>
+        {{> nav list=header}}
+    </div>
+    </nav>
+</header>
+
+<main class="main">
+    {{#with messages}}
+    <div class="messages">
+        <h2 class="messages_title">{{title}}</h2>
+        {{#each list}}
+          <div class="msg">
+            <strong class="msg_title">{{name}}</strong>
+            <p class="msg_text">{{message}}</p>
+            <span class="msg_day">{{day}}</span>
+
+          </div>
+        {{/each}}
+        <a href="#" class="messages_link">All messages</a>
+    </div>
+    {{/with}}
+
+    <form class="form">
+
+        {{#with form}}
+           <h2 class="form_title">{{title}}</h2>
+           <div class="form_input-list">
+
+                {{#each inputs}}
+                    <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" 
+                      id="form_info-{{id}}"/>
+                {{/each}}
+           </div>
+
+           <div class="form_checkbox">
+            <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+            <div></div>
+            <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+           </div>
+
+           <buttton  type="{{submit}}" class="form_button">{{button}}</buttton>
+           <p class="form_info">{{info}}</p>
+        {{/with}}
+    </form>
+
+</main>
+
+    <div class="advantages">
+        {{#each advantages}}
+            <div>
+                <strong>{{title}}</strong>
+                <p>{{text}}</p>
+            </div>
+        {{/each}}
+    </div>
+
+
+
+
+
+<footer class='row footer'>
+
+    <div class='col-3'>
+        {{> logo}}
+        <span class='footer_copyright'>Copyright 2023-2024</span>
+    </div>
+
+    {{#each footer}}
+        <div class='col-3'>
+        <span class='footer_title'>{{title}}</span> 
+        {{> nav list=links isVertical=true}}
+        </div>
+    {{/each}}
+    
+</footer>
+  
