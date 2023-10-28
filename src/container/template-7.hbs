@@ -1,0 +1,33 @@
+
+<main class="main">
+   <div class="hero">
+    {{#with hero}}
+      <h1 class="hero_title">{{title}}</h1>
+      <p class="hero_text">{{description}}</p>
+      <div class="hero_button">
+        {{#with button}}
+            <a href="{{url}}" class="hero_link">{{text}}</a>  
+        {{/with}}
+      </div>
+    {{/with}}
+   </div>
+
+   <div class="about">
+     {{#with about}}
+         <h2 class="about_title">{{heading}}</h2>
+         <p class="about_text">{{info}}</p>
+     {{/with}}
+   </div>
+
+<div class="articles_block">
+    <div class="article_header">
+        <h2 class="article_title">Our Articles</h2>
+        <a href="#" class="article_button">View All</a>
+    </div>
+    <div class="article_cards">
+        {{> articleCardDarc}}
+    </div>
+</div>
+
+</main> 
+
