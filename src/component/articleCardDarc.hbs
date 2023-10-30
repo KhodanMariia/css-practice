@@ -1,0 +1,12 @@
+{{#each articles}}
+  <div class='article_card' id='{{id}}'>
+    <img
+      src='{{photo}}'
+      alt='article img-card'
+      class='article_img'
+    />
+    <h3 class='article_name'>{{name}}</h3>
+    <p class='article_text'>{{description}}</p>
+    <a href='#' class='article_link'>Read All</a>
+  </div>
+{{/each}}
