@@ -584,15 +584,15 @@ video {
 }
 
 article,
-aside,
+/* aside, */
 details,
 figcaption,
 figure,
 footer,
 header,
 hgroup,
-menu,
-nav
+menu
+/* nav */
 /* section  */ {
   display: block;
 }
