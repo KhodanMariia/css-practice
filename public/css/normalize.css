@@ -162,7 +162,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
+  /* font-family: inherit; 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -385,8 +385,8 @@ select,
 button,
 textarea {
   margin: 0;
-  border: 0;
-  padding: 0;
+  /* border: 0; */
+  /* padding: 0; */
   display: inline-block;
   vertical-align: middle;
   white-space: normal;
@@ -394,7 +394,7 @@ textarea {
   line-height: 1;
 
   /* Browsers have different default form fonts */
-  font-size: 13px;
+  /* font-size: 13px; */
 }
 
 /* Remove the stupid outer glow in Webkit */
@@ -584,15 +584,15 @@ video {
 }
 
 article,
-aside,
+/* aside, */
 details,
 figcaption,
 figure,
 footer,
-header,
+/* header, */
 hgroup,
-menu,
-nav
+menu
+/* nav */
 /* section  */ {
   display: block;
 }
@@ -711,8 +711,8 @@ textarea {
 button,
 input {
   line-height: normal;
-  padding: 0;
-  border: 0;
+  /* padding: 0; */
+  /* border: 0; */
   background: 0;
   box-shadow: 0 0 0 transparent;
 }
